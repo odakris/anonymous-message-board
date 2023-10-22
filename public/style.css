@@ -1,36 +1,221 @@
+/* BASE */
 * {
-  margin: 0px;
-  padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 body {
-  padding: 10px;
+    width: 80%;
+    padding: 1em;
+    color: linen;
+    background-color: #003c58;
 }
 
-.replies {
-  margin-left: 50px;
+/*  //////////////////////// INDEX /////////////////////////  */
+.titles {
+    text-align: center;
 }
 
-.reply {
-  border: 1px dotted black;
-  margin: 5px;
-  padding: 5px;
+.sub-title {
+    margin: 1em;
 }
 
-.newReply {
-  margin: 10px 5px 10px 5px;
+hr {
+    width: 100%;
+    margin: 1em 0;
 }
 
-.thread {
-  border: 2px solid black;
-  padding: 5px;
-  margin-bottom: 5px;
+#testui {
+    height: 100%;
 }
 
-.id {
-  font-size: 10.5px;
+.block {
+    margin: 0.3em 1em;
+    justify-content: space-around;
+}
+
+.sub-block {
+    justify-content: space-between;
+}
+
+.form-block {
+    width: 20rem;
+    height: 16rem;
+    margin: 1em;
+}
+
+.form-block>form {
+    padding: 0.7em;
+    background-color: #1c5a77;
+    border-radius: 0.5em;
+    border: 0.2em solid linen;
+}
+
+.form-block>form>input,
+.form-block>form>textarea {
+    margin: 0.3em;
+    padding: 0.5em;
+    width: 90%;
+    font-size: 1em;
+    border: 0.1em solid lightgrey;
+    border-radius: 0.3em;
+    resize: none;
+}
+
+.form-block>form>input[type="submit"] {
+    width: 90%;
+}
+
+input[type="submit"]:hover {
+    background-color: #fffec4;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    box-shadow: 2px 2px #999;
+}
+
+
+/*  //////////////////////// BOARD & THREAD /////////////////////////  */
+
+.dotBorder {
+    border: 0.13em dotted linen;
+    border-radius: 0.5em;
+}
+
+.lineBorder {
+    border: 0.15em solid linen;
+    border-radius: 0.3em;
 }
 
 #submitNewThread {
-  margin: 50px;
+    width: 80%;
+}
+
+#submitNewThread>form>textarea {
+    width: 99%;
+    height: 8em;
+}
+
+.newReply>form>textarea {
+    width: 100%;
+    height: 5em;
+}
+
+.thread {
+    width: 100%;
+    max-width: 550px;
+    background-color: #1c5a77;
+    margin: 2em;
+}
+
+#submitNewThread {
+    margin: 3em;
+}
+
+#submitNewThread>form {
+    padding: 0.7em;
+    background-color: #1c5a77;
+}
+
+#submitNewThread>form>input,
+#submitNewThread>form>textarea {
+    margin: 0.3em;
+    padding: 0.5em;
+    font-size: 1em;
+    resize: none;
+}
+
+.main>form>input,
+.reply>form>input,
+.newReply>form>input,
+.newReply>form>textarea {
+    padding: 0.2em;
+    margin: 0.2em;
+    font-size: 0.8em;
+    resize: none;
+}
+
+.main>h3 {
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+.main {
+    margin: 2em;
+    padding: 0.8em;
+    background-color: #456878;
+    border-radius: 0.5em;
+}
+
+.replies {
+    margin: 2em;
+    padding: 1em;
+}
+
+.reply {
+    background-color: #456878;
+    margin: 1.5em;
+    padding: 1em;
+}
+
+.reply-text {
+    font-size: 1.5em;
+    margin: 0.2em;
+}
+
+.id {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #adadad;
+}
+
+
+/*  //////////////////////// FOOTER /////////////////////////  */
+.footer {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+a {
+    color: linen;
+}
+
+/* MEDIA QUERY STYLE */
+@media only screen and (min-height: 900px) {
+
+    .form-block {
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .form-block>form {
+        padding: 1em;
+    }
+
+    .form-block>form>input,
+    .form-block>form>textarea {
+        margin: 0.4em;
+        padding: 0.7em;
+        width: 90%;
+        font-size: 1em;
+    }
 }
