@@ -17,7 +17,8 @@
 		"express": "^4.14.0",
 		"helmet": "^3.1.0",
 		"mocha": "^3.2.0",
-		"mongoose": "^7.6.3"
+		"mongoose": "^7.6.3",
+		"webpack": "^4.46.0"
 	},
 	"repository": {
 		"type": "git",
