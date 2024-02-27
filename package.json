@@ -3,9 +3,9 @@
   "author": "odakris",
   "version": "0.0.1",
   "description": "InfoSec project for freeCodeCamp",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
