@@ -54,7 +54,7 @@ app.route("/").get(function (req, res) {
 });
 
 //For FCC testing purposes
-fccTestingRoutes(app);
+// fccTestingRoutes(app);
 
 //Routing for API
 // apiRoutes(app);
